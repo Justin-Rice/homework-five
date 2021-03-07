@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttf);
+}
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 60px;
+  color: #fff;
+  line-height: 160px;
+  font-weight: 100;
+  padding-bottom: -20px;
+  font-family: Proxima;
+}
+.hero h4 {
+  font-size: 20px;
+  font-family: Gill;
+  color: #fff;
+  font-weight: normal;
+}
+.hero button {
+  height: 40.04px;
+  width: 121.6px;
+  font-family: Gill;
+  font-size: 15px;
+  color: #fff;
+  background-color: #79addc;
+  border: none;
+  outline: none;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 205px;
+  padding-right: 205px;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  background-color: red;
+  text-align: center;
+  padding-top: 63px;
+}
+.promo-tours .promo h1 {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: Proxima;
+  color: #fff;
+  text-overflow: "-";
+}
+.promo-tours .promo h4 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Proxima;
+  color: #fff;
+  text-overflow: "-";
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+.promo-tours .promo button {
+  height: 40px;
+  width: 150px;
+  outline: none;
+  font-size: 15px;
+  font-family: Gill;
+  color: #fff;
+  background-color: #79addc;
+  border-color: #79addc;
+  border-radius: 50px;
+}
+.promo-tours .promo button:active {
+  border-style: outset;
+}
+.promo-tours .promo.israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours .promo.usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours .promo.austrailia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 1100px;
+  }
+
+  .promo {
+    margin-bottom: 30px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  width: 980px;
+  height: 60px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-white.png);
+  font-size: 20px;
+  color: #fff;
+}
+nav .logo-black {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-black.png);
+  font-size: 20px;
+  color: #fff;
+}
+nav .links {
+  width: 480px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  font-family: Gill;
+  font-size: 15px;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  border-right: solid;
+  border-width: 2px;
+  padding-right: 20px;
+  border-color: #79addc;
+}
+nav .links #con {
+  border-right: none;
+  border-color: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    max-width: 650px;
+  }
+}
+.booking-form {
+  width: 819px;
+  margin: 79px auto;
+  height: 890px;
+}
+.booking-form h1 {
+  font-size: 60px;
+  font-family: Proxima;
+}
+.booking-form input {
+  border-style: solid;
+  border-color: #79addc;
+  border-width: 3px;
+  border-radius: 5px;
+  font-family: Gill;
+  font-size: 18px;
+}
+.booking-form input.check {
+  margin-bottom: 20px;
+  width: 735px;
+  height: 58px;
+}
+.booking-form label {
+  line-height: 58px;
+  font-family: Gill;
+  font-size: 18px;
+}
+.booking-form .flex {
+  display: flex;
+  flex-direction: column;
+}
+.booking-form .flex .name {
+  height: 58px;
+  width: 345px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.booking-form .flex .email {
+  height: 58px;
+  width: 460px;
+  justify-content: center;
+}
+.booking-form .flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.booking-form .flex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.booking-form select {
+  height: 58px;
+  width: 103px;
+  border-style: solid;
+  border-color: #79addc;
+  border-width: 3px;
+  border-radius: 5px;
+  font-family: Gill;
+  font-size: 18px;
+}
+.booking-form select option {
+  font-family: Gill;
+  font-size: 18px;
+}
+.booking-form .long {
+  width: 819px;
+  height: 192px;
+  text-align: left;
+  border-style: solid;
+  margin-top: 20px;
+}
+.booking-form .long::placeholder {
+  position: relative;
+  top: -80px;
+}
+.booking-form .submit {
+  margin-top: 40px;
+  width: 813px;
+  height: 60.59px;
+  margin-left: 2.5px;
+  border-radius: 30px;
+  background-color: #79addc;
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .booking-form {
+    max-width: 700px;
+    min-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 1200px;
+  }
+  .booking-form .flex {
+    justify-content: space-between;
+  }
+  .booking-form .flex .col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .booking-form .flex .name {
+    margin: 20px auto;
+    width: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  .booking-form .flex .email {
+    margin: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .booking-form .flex2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .booking-form .check {
+    max-width: 700px;
+    min-width: auto;
+  }
+
+  .flex3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-width: auto;
+  }
+
+  .long {
+    max-width: 700px;
+    min-width: auto;
+  }
+
+  .submit {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+.about {
+  margin: 0 auto;
+  height: 715px;
+  max-width: 980px;
+  padding-bottom: 780px;
+  padding-top: 98px;
+}
+.about .about-top-section {
+  padding-bottom: 95px;
+}
+.about .about-top-section h1 {
+  font-family: Proxima;
+  font-size: 60px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  width: 140px;
+  letter-spacing: 10px;
+}
+.about .about-top-section p {
+  font-size: 16px;
+  font-family: Gill;
+}
+.about .about-bottom-section h3 {
+  font-size: 40px;
+  font-family: Proxima;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  width: 255px;
+  letter-spacing: 10px;
+  white-space: nowrap;
+}
+.about .about-bottom-section .client {
+  max-width: 722px;
+  min-width: 150px;
+  display: flex;
+  padding-bottom: 37px;
+}
+.about .about-bottom-section .client p {
+  width: 300px;
+}
+.about .about-bottom-section .client .client-image {
+  height: 150px;
+  width: 260px;
+  background-color: bisque;
+}
+.about .about-bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client-quote {
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+  font-family: Gill;
+  font-style: italic;
+  font-size: 16px;
+}
+.about .about-bottom-section .client .client-name {
+  text-align: right;
+  font-family: Proxima;
+  font-size: 20px;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    width: 700px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .client {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .about-top-section {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .about {
+    margin-left: 30px;
+  }
+}
+nav .nav-black {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  width: 980px;
+  height: 60px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+nav .nav-black .logo {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-white.png);
+  font-size: 20px;
+  color: #fff;
+}
+nav .nav-black .logo-black {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-black.png);
+  font-size: 20px;
+  color: black;
+}
+nav .nav-black .links {
+  width: 480px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  font-family: Gill;
+  font-size: 15px;
+}
+nav .nav-black .links a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  border-right: solid;
+  border-width: 2px;
+  padding-right: 20px;
+  border-color: #79addc;
+}
+nav .nav-black .links #con {
+  border-right: none;
+  border-color: none;
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    max-width: 600px;
+  }
+}
+footer {
+  max-width: 1280px;
+  height: 100px;
+  background-color: #79addc;
+  margin: 0 auto;
+}
+footer .container {
+  width: 990px;
+  margin: auto auto;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+}
+footer .container .logo2 {
+  background-image: url(../images/logo-white.png);
+  width: 92px;
+  height: 42px;
+  margin-right: 0 auto;
+  position: relative;
+  bottom: 15px;
+}
+footer .container .copyright {
+  font-family: Gill;
+  color: #fff;
+}
+footer .container .socials {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .socials svg {
+  margin: 0, 40, 0, 40;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .container {
+    max-width: 650px;
+    min-width: 400px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer {
+    max-width: 700px;
+    min-width: 450px;
+  }
+  footer .container {
+    max-width: 550px;
+    min-width: 450px;
+  }
+}
